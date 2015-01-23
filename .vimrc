@@ -27,3 +27,9 @@ filetype plugin indent on
 
 " autosave when focus is lost
 :au FocusLost * :wa
+
+" open a new tab when selecting a file with Ctrl-P
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
