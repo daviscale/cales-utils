@@ -27,3 +27,5 @@ filetype plugin indent on
 
 " autosave when focus is lost
 :au FocusLost * :wa
+
+set backspace=indent,eol,start
